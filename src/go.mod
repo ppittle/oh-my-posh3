@@ -7,6 +7,8 @@ require (
 	github.com/alecthomas/assert v0.0.0-20170929043011-405dbfeb8e38
 	github.com/alecthomas/colour v0.1.0 // indirect
 	github.com/alecthomas/repr v0.0.0-20201103221029-55c485bd663f // indirect
+	github.com/aws/aws-sdk-go-v2 v1.1.0
+	github.com/aws/aws-sdk-go-v2/config v1.1.0
 	github.com/distatus/battery v0.10.0
 	github.com/go-ole/go-ole v1.2.4 // indirect
 	github.com/gookit/color v1.3.5

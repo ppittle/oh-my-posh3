@@ -66,6 +66,8 @@ const (
 	Os SegmentType = "os"
 	// EnvVar writes the content of an environment variable
 	EnvVar SegmentType = "envvar"
+	// Aws writes the Amazon Web Services subscription and region info we're currently in
+	Aws SegmentType = "aws"
 	// Az writes the Azure subscription info we're currently in
 	Az SegmentType = "az"
 	// Kubectl writes the Kubernetes context we're currently in
@@ -136,6 +138,7 @@ func (segment *Segment) mapSegmentWithWriter(env environmentInfo) error {
 		Node:          &node{},
 		Os:            &osInfo{},
 		EnvVar:        &envvar{},
+		Aws:           &aws{},
 		Az:            &az{},
 		Kubectl:       &kubectl{},
 		Dotnet:        &dotnet{},
